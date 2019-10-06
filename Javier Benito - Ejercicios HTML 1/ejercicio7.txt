@@ -1,0 +1,3 @@
+text-transform: uppercase, lowercase, capitalize
+letter-spacing: Numero de pixeles de separacion
+text-shadow: coordenada 1 en px, coordenada 2 en px, color.
