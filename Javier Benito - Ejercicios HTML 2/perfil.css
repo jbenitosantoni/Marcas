@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+iframe {
+    display: block;
+    border: none;
+    height: 100vh;
+    width: 100vw;
+}
+#main {
+	margin-top: 50px;
+	margin-left: 50px;
+}
+#nombre{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 300px
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: inherit;
+}
+#lista {
+  margin-left: 25px;
+}
