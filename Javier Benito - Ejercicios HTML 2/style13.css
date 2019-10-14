@@ -9,3 +9,8 @@ h1 {
 .tamaño {
 	font-size: 15px;
 }
+a {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
