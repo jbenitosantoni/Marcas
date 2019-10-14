@@ -12,5 +12,8 @@ h1 {
 a {
     text-decoration: inherit;
     color: inherit;
-    cursor: pointer;
+    cursor: inherit;
+}
+.list-group-item {
+    padding: 18.5px 10px
 }
