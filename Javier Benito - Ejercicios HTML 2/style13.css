@@ -5,6 +5,7 @@
 }
 h1 {
 	font-size: 30px;
+	cursor: default;
 }
 .tamaño {
 	font-size: 15px;

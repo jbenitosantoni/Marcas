@@ -1,6 +1,9 @@
 body {
     margin: 0;
 }
+nav {
+  cursor: pointer;
+}
 iframe {
     display: block;
     border: none;
@@ -10,17 +13,22 @@ iframe {
 #main {
 	margin-top: 50px;
 	margin-left: 50px;
+  cursor: default;
 }
 #nombre{
   display: inline-block;
   vertical-align: top;
-  margin-left: 300px
+  margin-left: 20px;
 }
 a {
   text-decoration: inherit;
   color: inherit;
-  cursor: inherit;
+  cursor: pointer;
 }
 #lista {
   margin-left: 25px;
+  cursor: default;
+}
+#estudios {
+  margin-top: 20px;
 }
