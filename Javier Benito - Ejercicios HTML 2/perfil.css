@@ -14,10 +14,10 @@ iframe {
   margin-left: 50px;
 }
 
-#nombre {
+.nombre {
   display: inline-block;
   vertical-align: top;
-  margin-left: 300px
+  margin-left: 70px
 }
 
 a {
