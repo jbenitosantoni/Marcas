@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <form>
+    First name:<br>
+    <input type="text" name="firstname" pattern="([A-z])|[ñ]+"><br>
+    Last name:<br>
+    <input type="text" name="lastname" pattern="([A-z])|[ñ]+"><br /><br />
+    <fieldset>
+      <legend>Dirección</legend>
+      <label>Calle:</label>
+      <input type="text" name="calle" pattern="([A-z])|[ñ]+"><br />
+      <label>Ciudad:</label>
+      <input type="text" name="ciudad" pattern="([A-z])|[ñ]+"><br />
+      <label>Provincia:</label>
+      <input type="text" name="provincia" pattern="([A-z])|[ñ]+"><br>
+      <label>CP:</label>
+      <input type="text" name="cp" pattern="^((((01)|([1-4]{1}[0-9]{1})|(5[0-2]{1}))([0-9]{2})[1-9]{1})|(((0[2-9]{1})|([1-4]{1}[0-9]{1})|(5[0-2]{1}))([0-9]{3})))$">
+    </fieldset><br />
+    <label>Selecciona tu curso</label>
+    <select name="cursos">
+      <option value="c1">
+        Curso 1
+      </option>
+      <option value="c2">
+        Curso 2
+      </option>
+      <option value="c3">
+        Curso 3
+      </option>
+    </select><br /><br />
+    <textarea name="otros" rows="10" cols="40">Que mas quieres decirnos</textarea><br>
+    <input type="checkbox" name="condiciones"><label>Acepto condiciones de privacidad</label><br><br>
+    <button type="button" value="enviar">Enviar</button>
+  </form>
+</body>
+
+</html>
