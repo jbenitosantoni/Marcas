@@ -1,5 +1,10 @@
 .margen {
-  margin-left: 23%;
-  margin-right: 23%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.fondo {
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: #F0F8FF;
 }
