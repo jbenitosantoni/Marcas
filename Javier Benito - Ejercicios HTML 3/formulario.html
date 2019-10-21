@@ -19,37 +19,37 @@
       <form>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre">
+            <input type="text" class="form-control" placeholder="Nombre" required>
           </div><br>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Apellidos"><br>
+            <input type="text" class="form-control" placeholder="Apellidos" required><br>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Calle">
-            <input type="text" class="form-control" placeholder="Localidad">
+            <input type="text" class="form-control" placeholder="Calle" required>
+            <input type="text" class="form-control" placeholder="Localidad" required>
           </div>
           <div class="col">
-            <input type="number" class="form-control" placeholder="Numero">
-            <input type="text" class="form-control" placeholder="Codigo Postal"><br>
+            <input type="number" class="form-control" placeholder="Numero" required>
+            <input type="text" class="form-control" placeholder="Codigo Postal" required><br>
           </div>
         </div>
         <h5>Datos Menor:</h5>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre">
+            <input type="text" class="form-control" placeholder="Nombre" required>
           </div><br>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Apellidos">
+            <input type="text" class="form-control" placeholder="Apellidos" required>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <input type="number" class="form-control" placeholder="Edad">
+            <input type="number" class="form-control" placeholder="Edad" required>
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Alergias o Problemas">
+            <input type="text" class="form-control" placeholder="Alergias o Problemas" required>
           </div>
         </div><br />
         <h5>Campamentos:</h5>
@@ -62,7 +62,7 @@
           <label class="form-check-label" for="inlineRadio2">Campamento de Montaña</label>
         </div><br><br>
         <h5>Dieta:</h5>
-        <select id="inputState" class="form-control">
+        <select id="inputState" class="form-control" required>
           <option selected>Pension Completa</option>
           <option>Media Pension</option>
           <option>Comida Libre</option>
@@ -95,18 +95,18 @@
         <h5>Datos de Pago:</h5>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Numero de Tarjeta">
+            <input type="text" class="form-control" placeholder="Numero de Tarjeta" pattern="/(\d{4}[-. ]?){4}|\d{4}[-. ]?\d{6}[-. ]?\d{5}/g" required>
           </div>
         </div><br>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Mes">
+            <input type="text" class="form-control" placeholder="Mes" required>
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Año">
+            <input type="text" class="form-control" placeholder="Año" required>
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="CVV">
+            <input type="text" class="form-control" placeholder="CVV" required>
           </div>
         </div><br>
         <button type="submit" class="btn btn-primary">Enviar</button>
