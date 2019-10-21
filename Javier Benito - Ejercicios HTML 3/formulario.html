@@ -100,13 +100,13 @@
         </div><br>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Mes" required>
+            <input type="text" class="form-control" placeholder="Mes" pattern="(0[1-9]|1[0-2])" required>
           </div>
           <div class="col">
             <input type="text" class="form-control" placeholder="Año" required>
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="CVV" required>
+            <input type="text" class="form-control" placeholder="CVV" pattern="([0-9]|[0-9]|[0-9])" required>
           </div>
         </div><br>
         <button type="submit" class="btn btn-primary">Enviar</button>
