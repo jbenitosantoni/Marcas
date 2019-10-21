@@ -13,12 +13,29 @@
 
 <body>
   <div class="fondo">
-
-
-    <div class="margen">
+    <div class="margen"><br>
       <h1>Formulario Campamento</h1>
-      <h5>Datos Padres:</h5><br />
+      <h5>Datos Padres:</h5>
       <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div><br>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellidos"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Calle">
+            <input type="text" class="form-control" placeholder="Localidad">
+          </div>
+          <div class="col">
+            <input type="number" class="form-control" placeholder="Numero">
+            <input type="text" class="form-control" placeholder="Codigo Postal"><br>
+          </div>
+        </div>
+        <h5>Datos Menor:</h5>
         <div class="row">
           <div class="col">
             <input type="text" class="form-control" placeholder="Nombre">
@@ -29,11 +46,73 @@
         </div>
         <div class="row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Direccion Completa">
+            <input type="number" class="form-control" placeholder="Edad">
           </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Alergias o Problemas">
+          </div>
+        </div><br />
+        <h5>Campamentos:</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Campamento acuático</label>
         </div>
-      </form>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Campamento de Montaña</label>
+        </div><br><br>
+        <h5>Dieta:</h5>
+        <select id="inputState" class="form-control">
+          <option selected>Pension Completa</option>
+          <option>Media Pension</option>
+          <option>Comida Libre</option>
+        </select><br>
+        <h5>Adicionales:</h5>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Ida en Avión</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Vuelta en Avión</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Habitación Individual</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Dieta Vegana</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Translados</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Alquiler de Material</label>
+        </div><br><br>
+        <h5>Datos de Pago:</h5>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Numero de Tarjeta">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Mes">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Año">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="CVV">
+          </div>
+        </div><br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
+    </form>
+  </div>
   </div>
 </body>
 

@@ -1,10 +1,21 @@
 .margen {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .fondo {
   margin-left: 15%;
   margin-right: 15%;
   background-color: #F0F8FF;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: table;
+  margin: 0;
 }
