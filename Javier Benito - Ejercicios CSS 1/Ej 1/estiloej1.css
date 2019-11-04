@@ -1,10 +1,65 @@
-/* Cambios realizados en el archivo HTML:
+@charset "UTF-8";
 
-
-
-*/
-
-h1 {
-
+body {
+  background-image: url(./pizza.ico);
 }
 
+h1 {
+  font-size: 2.3em;
+}
+
+.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#main {
+  border: solid 2px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: white;
+}
+
+#interior {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#autor {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+#button {
+  background-color: #f1e3f7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: solid 2px;
+}
+
+#button:hover {
+  background-color: #de1777;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: solid 2px;
+  border-color: black;
+}
