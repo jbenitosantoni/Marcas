@@ -3,45 +3,78 @@
 
 
 */
-
-
 html {
-	font-family: 'Supermercado One', cursive;
+  font-family: 'Supermercado One', cursive;
 }
 
+h1 {
+  font-size: 2.3em;
+}
+
+table, tr, td {
+  border: 1px solid DarkTurquoise;
+  border-collapse: collapse;
+}
 
 .fondo {
-
+  margin-right: 15%;
+  margin-left: 15%;
 }
-
 
 .receta {
-
+  display: block;
+  float: left;
+  width: 60%;
+  margin-left: 5%;
 }
 
+.barraDatosSociales {}
 
-.barraDatosSociales {
+.comentario {}
 
-}
-
-
-.comentario {
-
-}
-
-
-.respuesta {
-
-}
-
+.respuesta {}
 
 .categorias {
-
+  width: 30%;
+  margin-right: 5%;
+  float: right;
+  text-align: center;
 }
 
+.categorias a {
+  background-color: #2d397e;
+  color: white;
+  padding: 5px 6px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: solid black 2px;
+}
+
+.categorias a:hover {
+  background-color: #1ba7e5;
+  color: black;
+  padding: 5px 6px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: solid black 2px;
+}
 
 .otrasRecetas {
-
+  width: 30%;
+  margin-right: 5%;
+  text-align: center;
+  float: right;
 }
 
+.otrasRecetas a {
+  text-decoration: none;
+  color: black;
+}
 
+.otrasRecetas a:hover {
+  color: #1ba7e5;
+}
