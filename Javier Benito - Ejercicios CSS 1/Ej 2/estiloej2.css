@@ -12,8 +12,17 @@ h1 {
 }
 
 table, tr, td {
+  margin: 0px auto;
   border: 1px solid DarkTurquoise;
   border-collapse: collapse;
+}
+
+table {
+  width: 80%;
+}
+
+td:not(.nocentro) {
+  text-align: center;
 }
 
 .fondo {
@@ -28,7 +37,29 @@ table, tr, td {
   margin-left: 5%;
 }
 
-.barraDatosSociales {}
+.barraDatosSociales {
+  border: solid;
+  border-top: none;
+  border-right: none;
+  margin-right: 3%;
+  border-color: DarkTurquoise;
+}
+
+.barraDatosSociales li {
+  padding-right: 5px;
+  display: inline-block;
+  margin: 5px 0;
+  border-collapse: separate;
+}
+
+.barraDatosSociales li:not(:last-child) {
+  border-right: solid;
+  border-color: DarkTurquoise;
+}
+
+.barraDatosSociales li:not(:first-child) {
+  padding-left: 5px;
+}
 
 .comentario {}
 
