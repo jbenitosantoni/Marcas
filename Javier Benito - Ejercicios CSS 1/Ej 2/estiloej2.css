@@ -25,6 +25,15 @@ td:not(.nocentro) {
   text-align: center;
 }
 
+p:nth-last-child(n+3):not(:first-of-type)::first-letter {
+  font-size: 200%;
+}
+
+.receta img:not(:nth-last-child(-n+1)) {
+  display: block;
+  margin: 0 auto;
+}
+
 .fondo {
   margin-right: 15%;
   margin-left: 15%;
@@ -35,6 +44,8 @@ td:not(.nocentro) {
   float: left;
   width: 60%;
   margin-left: 5%;
+  border-right: solid;
+  border-color: DarkTurquoise;
 }
 
 .barraDatosSociales {
@@ -61,13 +72,14 @@ td:not(.nocentro) {
   padding-left: 5px;
 }
 
-.comentario {}
-
-.respuesta {}
+.comentario img {
+  width: 50px;
+  height: 50px;
+}
 
 .categorias {
   width: 30%;
-  margin-right: 5%;
+  margin-right: 4%;
   float: right;
   text-align: center;
 }
@@ -83,6 +95,12 @@ td:not(.nocentro) {
   border: solid black 2px;
 }
 
+.categorias h2 {
+  border-bottom: solid;
+  border-color: DarkTurquoise;
+  margin-bottom: 20px;
+}
+
 .categorias a:hover {
   background-color: #1ba7e5;
   color: black;
@@ -96,9 +114,18 @@ td:not(.nocentro) {
 
 .otrasRecetas {
   width: 30%;
-  margin-right: 5%;
+  margin-right: 4%;
   text-align: center;
   float: right;
+}
+
+.top {
+  border-top: solid;
+  border-color: DarkTurquoise;
+}
+
+.top img {
+  margin-top: 20px;
 }
 
 .otrasRecetas a {
@@ -108,4 +135,8 @@ td:not(.nocentro) {
 
 .otrasRecetas a:hover {
   color: #1ba7e5;
+}
+
+.respuesta {
+  float: right;
 }
