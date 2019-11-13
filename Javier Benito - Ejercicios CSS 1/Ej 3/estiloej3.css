@@ -1,48 +1,115 @@
-/* Cambios realizados en el archivo HTML:
-
-
-
-*/
-
-
-
-
 .web {
-
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #663300;
+  color: #ff9900;
 }
 
-
-.logoWeb {
-
+.logoWeb h1 {
+  padding-top: 5%;
+  padding-left: 2%;
 }
-
 
 .promoTop {
-
+  float: right;
+  background-color: #ff9900;
+  margin-right: 3%;
+  border: solid;
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-bottom-style: dotted;
+  color: black;
 }
-
 
 .social {
-
+  float: right;
+  font-weight: bold;
+  margin-right: 5%;
 }
 
-
-.elementoMenu {
-
+.social ul>li {
+  list-style-type: none;
+  display: inline-block;
 }
 
+.social img {
+  width: 50px;
+  height: 50px;
+}
+
+.social img:nth-child(even) {
+  display: none;
+}
+
+.social img:nth-child(odd):hover {
+  display: none;
+}
+
+nav {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #663300;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  float: left;
+  color: #ff9900;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #ff9900;
+}
 
 .submenu {
-
+  display: none;
 }
 
+.submenu:hoover {}
 
 .local {
-
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  animation-name: animacion;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  content: url(1.png);
+  animation-iteration-count: infinite;
 }
 
+@keyframes animacion {
+  0% {
+    content: url(2.png);
+  }
 
-.columna {
-
+  100% {
+    content: url(3.png);
+  }
 }
 
+.columna h2 {
+  font-weight: bold;
+  border-bottom: 2px solid #ff9900;
+  display: inline-block;
+  padding-bottom: 5px;
+}
