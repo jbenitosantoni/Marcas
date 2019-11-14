@@ -93,7 +93,10 @@ nav ul li a:hover {
   animation-name: animacion;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  nimation-timing-function: linear;
 }
 
 @keyframes animacion {
