@@ -55,6 +55,14 @@
   display: none;
 }
 
+.social a:hover img:nth-child(even) {
+  display: initial;
+}
+
+.social a:hover img:nth-child(odd) {
+  display: none;
+}
+
 nav {
   overflow: hidden;
   width: 100%;
@@ -63,17 +71,17 @@ nav {
 }
 
 nav ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: inline-block;
-  overflow: hidden;
-  background-color: #663300;
 }
 
 nav ul li {
   float: left;
 }
 
-nav ul li a {
+.elementoMenu a {
   float: left;
   color: #ff9900;
   padding: 14px 16px;
@@ -82,18 +90,19 @@ nav ul li a {
   font-size: 17px;
 }
 
-nav ul li a:hover {
+.elementoMenu a:hover {
   color: white;
   background-color: #ff9900;
 }
 
 .submenu {
   display: none;
-  position: absolute;
 }
 
-.elementoMenu a:hoover .submenu {
-  display: block;
+.elementoMenu a:first-child:hover+.submenu, .submenu:hover {
+  display: inline-block;
+  position: absolute;
+  background-color: #663300;
 }
 
 .local {
@@ -105,7 +114,7 @@ nav ul li a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  nimation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @keyframes animacion {
@@ -130,12 +139,14 @@ nav ul li a:hover {
 }
 
 footer {
-  height: 100%;
-  width: 100%;
-  display: flex;
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .columna {
   display: inline-block;
+  margin-right: 40px;
   text-align: center;
 }

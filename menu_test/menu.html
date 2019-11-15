@@ -1,0 +1,87 @@
+<head>
+  <style>
+    nav {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+    }
+
+    nav a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .submenu {
+      float: left;
+      overflow: hidden;
+    }
+
+    .submenu a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    nav a:hover {
+      background-color: red;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .submenu a:hover {
+      background-color: #ddd;
+    }
+
+    nav a:hover .sumenu {
+      display: block;
+    }
+  </style>
+
+</head>
+<nav>
+  <ul>
+    <li class="elementoMenu">
+      <a href="">Inicio</a>
+    </li>
+    <li class="elementoMenu">
+      <a href="">Carta</a>
+      <div class="submenu">
+        <a href="1.html">Platos de Tandoori</a>
+        <a href="1.html">Platos de Curry</a>
+        <a href="1.html">Arroces</a>
+        <a href="1.html">Platos vegetales</a>
+      </div>
+    </li>
+    <li class="elementoMenu">
+      <a href="">Menú</a>
+      <div class="submenu">
+        <a href="1.html">Menú del día</a>
+        <a href="1.html">Menú degustación</a>
+      </div>
+    </li>
+    <li class="elementoMenu">
+      <a href="">Restaurante</a>
+      <div class="submenu">
+        <a href="1.html">Nuestra historia</a>
+        <a href="1.html">Cómo llegar</a>
+      </div>
+    </li>
+    <li class="elementoMenu">
+      <a href="">Reservas</a>
+    </li>
+  </ul>
+</nav>
