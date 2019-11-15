@@ -78,11 +78,10 @@ nav ul {
 }
 
 nav ul li {
-  float: left;
+  display: inline-block;
 }
 
 .elementoMenu a {
-  float: left;
   color: #ff9900;
   padding: 14px 16px;
   text-decoration: none;
@@ -100,7 +99,7 @@ nav ul li {
 }
 
 .elementoMenu a:first-child:hover+.submenu, .submenu:hover {
-  display: inline-block;
+  display: block;
   position: absolute;
   background-color: #663300;
 }
