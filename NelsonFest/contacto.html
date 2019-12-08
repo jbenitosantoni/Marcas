@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/contacto.css">
+  <title>Festi</title>
+</head>
+
+<body>
+  <header id="main-header">
+
+    <a id="logo-header" href="index.html">
+      <span class="site-name">PunkFest</span>
+      <span class="site-desc">El mejor Festival Punk de Madrid</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="entradas.html">Entradas</a></li>
+        <li><a href="recinto.html">Recinto</a></li>
+        <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <ul>
+        <li><a href=""><img src="./img/twitter1.png"><img src="./img/twitter2.png"></a></li>
+        <li><a href=""><img src="./img/facebook1.png"><img src="./img/facebook2.png"></a></li>
+        <li><a href=""><img src="./img/google1.png"><img src="./img/google2.png"></a></li>
+      </ul>
+    </div>
+  </header>
+  <section id="main-content">
+    <div class="content">
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname"><i class="fa fa-user"></i> Nombre</label>
+          <input type="text" id="fname" name="firstname" placeholder="Javier" required>
+
+          <label for="lname"><i class="fa fa-user"></i> Apellidos</label>
+          <input type="text" id="lname" name="lastname" placeholder="Benito">
+
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" placeholder="javier@gmail.com" required>
+
+          <label for="subject"><i class="fas fa-comment-alt"></i> Mensaje</label>
+          <textarea id="subject" name="subject" placeholder="Escribe tu mensaje..." style="height:200px" required></textarea>
+          <label>
+            <input type="checkbox" name="terminos" required> Acepto Terminos, Condiciones y Política de Privacidad
+          </label><br>
+          <input type="submit" value="Enviar" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer id="main-footer">
+    <div id="patrocinadores">
+      <h2>Patrocinadores</h2>
+      <img src="./img/patro1.png" />
+      <img src="./img/patro2.png" />
+      <img src="./img/patro3.png" />
+    </div>
+    <p>&copy; 2019 <a href="http://javierbenito.me">Javier Benito Santoni</a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/entradas.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Festi</title>
+</head>
+
+<body>
+  <header id="main-header">
+
+    <a id="logo-header" href="index.html">
+      <span class="site-name">PunkFest</span>
+      <span class="site-desc">El mejor Festival Punk de Madrid</span>
+    </a>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="entradas.html">Entradas</a></li>
+        <li><a href="recinto.html">Recinto</a></li>
+        <li><a href="patrocinadores.html">Patrocinadores</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <ul>
+        <li><a href=""><img src="./img/twitter1.png"><img src="./img/twitter2.png"></a></li>
+        <li><a href=""><img src="./img/facebook1.png"><img src="./img/facebook2.png"></a></li>
+        <li><a href=""><img src="./img/google1.png"><img src="./img/google2.png"></a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <section id="main-content">
+    <div class="content">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-50">
+                  <h3>Direccion de Facturación</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Nombre Completo</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Javier Benito" required>
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" placeholder="javier@gmail.com" required>
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Direccion</label>
+                  <input type="text" id="adr" name="address" placeholder="Av de Pablo Iglesias 10" required>
+                  <label for="city"><i class="fa fa-institution"></i> Ciudad</label>
+                  <input type="text" id="city" name="city" placeholder="Madrid" required>
+
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Provincia</label>
+                      <input type="text" id="state" name="state" placeholder="Madrid" required>
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">CP</label>
+                      <input type="text" id="zip" pattern="^((((01)|([1-4]{1}[0-9]{1})|(5[0-2]{1}))([0-9]{2})[1-9]{1})|(((0[2-9]{1})|([1-4]{1}[0-9]{1})|(5[0-2]{1}))([0-9]{3})))$" name="zip" placeholder="28049" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-50">
+                  <h3>Pago</h3>
+                  <label for="fname">Tarjetas Aceptadas</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Nombre en Tarjeta</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Javier Benito" required>
+                  <label for="ccnum">Numero Tarjeta</label>
+                  <input type="text" id="ccnum" name="cardnumber" pattern="^\d{4}[\s\-]?\d{4}[\s\-]?\d{4}[\s\-]?\d{4}$" placeholder="1111-2222-3333-4444" required>
+                  <label for="expmonth">Mes Caducidad</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="02" required>
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Año Caducidad</label>
+                      <input required type="text" id="expyear" name="expyear" placeholder="2020">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input required type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <label>
+                <input type="checkbox" name="terminos" required> Acepto Terminos, Condiciones y Política de Privacidad
+              </label>
+              <input type="submit" value="Continuar con la Compra" class="btn">
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="container">
+            <h4>Carrito <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>0</b></span></h4>
+            <p><a href="entradas.html">Bono 1 Dia</a> <select name="1Dia" class="cantidades">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></p>
+            <p><a href="entradas.html">Bono 2 Dias</a> <select name="2Dias" class="cantidades">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></p>
+            <p><a href="entradas.html">Bono Festi</a> <select name="Bono" class="cantidades">
+                <option selected value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>0€</b></span></p>
+          </div>
+        </div>
+      </div>
+  </section>
+  </div>
+  <footer id="main-footer">
+    <div id="patrocinadores">
+      <h2>Patrocinadores</h2>
+      <img src="./img/patro1.png" />
+      <img src="./img/patro2.png" />
+      <img src="./img/patro3.png" />
+    </div>
+    <p>&copy; 2019 <a href="http://javierbenito.me">Javier Benito Santoni</a></p>
+  </footer>
+</body>

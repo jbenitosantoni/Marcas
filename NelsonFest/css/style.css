@@ -1,0 +1,443 @@
+@font-face {
+  font-family: 'vampireItalic';
+  src: url('../fonts/VampireWarsItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vampire';
+  src: url('../fonts/VampireWars.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #666;
+  background: #f2f2f2;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 80px;
+}
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#main-header {
+  background: #333;
+  color: white;
+  height: 80px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+#main-header a {
+  color: white;
+}
+
+#logo-header {
+  float: left;
+  padding: 15px 0 0 20px;
+  text-decoration: none;
+}
+
+#logo-header:hover {
+  color: #0b76a6;
+}
+
+#logo-header .site-name {
+  display: block;
+  font-weight: 700;
+  font-family: 'vampireItalic';
+  font-size: 2em;
+}
+
+#logo-header .site-desc {
+  display: block;
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 1em;
+  color: #999;
+}
+
+.social div {
+  float: right;
+  margin-right: 15%;
+}
+
+.social {
+  float: right;
+  width: 20%;
+  font-weight: bold;
+}
+
+.social ul>li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.social img {
+  width: 50px;
+  height: 50px;
+}
+
+.social img:nth-child(even) {
+  display: none;
+}
+
+.social a:hover img:nth-child(even) {
+  display: initial;
+}
+
+.social a:hover img:nth-child(odd) {
+  display: none;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 40px;
+  table-layout: fixed;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 10px;
+  font-family: 'vampire';
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #0b76a6;
+}
+
+#main-content {
+  background: white;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+#main-content header {
+  font-family: 'vampireItalic';
+}
+
+#main-content header,
+#main-content .content {
+  padding: 40px;
+}
+
+#fotoportada {
+  width: 100%;
+  max-height: 400px;
+}
+
+.content h1 {
+  font-size: 2.4em;
+  font-family: 'vampire';
+  text-align: center;
+}
+
+.subrayadogrande {
+  font-size: 1.3em;
+  font-family: 'vampire';
+  color: black;
+  text-align: center;
+}
+
+#tablaindex {
+  width: 70%;
+  table-layout: fixed;
+  text-align: center;
+  border: solid;
+  border-radius: 5px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+#tablaindex th {
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+#tablaindex td {
+  font-size: 1.1em;
+}
+
+#main-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#main-footer p {
+  margin: 0;
+}
+
+#main-footer a {
+  color: white;
+}
+
+#patrocinadores {
+  width: 90%;
+  text-align: center;
+  font-family: 'vampire';
+  margin-left: 5%;
+}
+
+#patrocinadores img {
+  align-items: center;
+  max-width: 400px;
+  max-height: 200px;
+}
+
+#patrocinadores img:nth-child(3) {
+  float: right;
+  margin-right: 13%;
+}
+
+#patrocinadores img:nth-child(2) {
+  float: left;
+  margin-left: 13%;
+}
+
+#pDifusion table {
+  margin: 0 auto;
+  border-spacing: 30px;
+}
+
+#pDifusion td {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+#pDifusion img {
+  max-width: 400px;
+  max-height: 200px;
+}
+
+#pApoyo table {
+  margin: 0 auto;
+  border-spacing: 30px;
+}
+
+#pApoyo td {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+#pApoyo img {
+  max-width: 400px;
+  max-height: 200px;
+}
+
+#cartel {
+  align: center;
+}
+
+#cartel img {
+  display: block;
+  margin: 0 auto;
+}
+
+#noticias span {
+  color: #8fc8cf;
+}
+
+#noticias h3 {
+  color: #06b3c9;
+}
+
+#paginanoticias h3 {
+  color: #06b3c9;
+}
+
+#paginanoticias span {
+  color: #8fc8cf;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+#tablaArtistas {
+  margin: 0 auto;
+}
+
+#tablaArtistas img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.contenedor h4 {
+  position: absolute;
+  bottom: -15px;
+  font-family: 'vampire';
+  left: 10px;
+  background: #9c0505;
+  padding: 3px 5px;
+  line-height: 1.7;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+#paginaentradas {
+  padding-top: 30px;
+  width: 75%;
+  table-layout: fixed;
+  text-align: center;
+  margin: auto;
+}
+
+#paginaentradas th {
+  font-size: 1.3em;
+}
+
+#paginaentradas tr th:nth-child(2) {
+  font-size: 1.7em;
+}
+
+.buttonred {
+  background-color: #eb4034;
+  color: white;
+  border: 2px solid black;
+  padding: 25px 32px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonblue {
+  background-color: #4b86b3;
+  color: white;
+  border: 2px solid black;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#modal {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
+
+.modalconent {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 80%;
+  padding: 20px;
+}
+
+#bloque {
+  display: block;
+  overflow: auto;
+}
+
+#mapa {
+  width: 90%;
+  height: 430px;
+}
+
+#columnaizquierda {
+  float: left;
+  width: 50%;
+}
+
+#columnaderecha {
+  width: 50%;
+  float: right;
+}
+
+#bloqueMain {
+  display: block;
+  overflow: auto;
+}
+
+#columnaMain {
+  float: left;
+  width: 70%;
+}
+
+#noticias {
+  width: 30%;
+  float: right;
+}
+
+#pDifusion {
+  text-align: center;
+}
+
+#pApoyo {
+  text-align: center;
+}
+
+.anoestilo {
+  text-decoration: none;
+  color: inherit;
+}
